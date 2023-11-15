@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <section>
+        <h2>User Input</h2>
+        <form>
+            <label for="">Text Input:</label>
+            <!-- Default type is 'text' -->
+            <input type="text" value="text input"/>
+            <br/>
+            <!-- Only allows numbers and e -->
+            <!-- min -> smallest value -->
+            <!-- max -> biggest value -->
+            <!-- step -> increment number -->
+            <label for="">Number Input:</label>
+            <input type="number" min="0" max="10" step="0.5"/>
+            <br/>
+            <fieldset>
+                <legend>User Details</legend>
+                <label for="">Email:</label>
+                <!-- Checks the value has an @ -->
+                <input type="email" placeholder="me@whatever.com">
+                <br/>
+                <label for="">Password</label>
+                <!-- displays **** instead of the value -->
+                <input type="password">
+                <br/>
+            </fieldset>
+            <label for="">Autofocus</label>
+            <!-- Selects this input automatically -->
+            <input type="text" autofocus>
+            <br/>
+            <label for="">Date</label>
+            <input type="date">
+            <br/>
+            <label for="">Dropdown</label>
+            <!-- dropdown -->
+            <select>
+                <!-- Sets out the choices for the dropdown -->
+                <option>United Kingdom</option>
+                <option>United States</option>
+                <!-- Selected -> default option -->
+                <option selected>France</option>
+            </select>
+            <br/>
+            <!-- 
+                Linking the label to the id of 
+                the input lets you click the label instead
+                of the box
+             -->
+            <label for="myCheck">Check</label>
+            <input type="checkbox" name="" id="myCheck">
+            <br/>
+            <!-- Mutually exclusive because they have the same name -->
+            <label for="">Opt1</label>
+            <input type="radio" name="myRadio" id="">
+            <label for="">Opt2</label>
+            <input type="radio" name="myRadio" id="">
+            <label for="">Opt3</label>
+            <input type="radio" name="myRadio" id="">
+            <!-- submits the form -->
+            <button>Submit</button>
+        </form>
+    </section>
+</body>
+</html>

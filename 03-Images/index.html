@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+    <section>
+        <h2>Absolute paths</h2>
+        <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Mocs%C3%A1ri_tekn%C5%91s_Kiserd%C5%91_2016.jpg/1200px-Mocs%C3%A1ri_tekn%C5%91s_Kiserd%C5%91_2016.jpg" 
+            alt="Relatively sized turtle"
+            width="30%"
+        >
+        <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Mocs%C3%A1ri_tekn%C5%91s_Kiserd%C5%91_2016.jpg/1200px-Mocs%C3%A1ri_tekn%C5%91s_Kiserd%C5%91_2016.jpg" 
+            alt="Fixed size turtle"
+            width="300px"
+        >
+        <img 
+            src="random line of text that doesnt link to an actual image" 
+            alt="Text shows if link is broken"
+        >
+    </section>
+    <section>
+        <h2>Relative Path</h2>
+        <!-- ./ indicates the same folder -->
+        <img src="./me.png" alt="Fluffy muppet">
+        <!-- But you can just use the name -->
+        <img src="me.png" alt="Fluffy muppet">
+    </section>
+</body>
+</html>

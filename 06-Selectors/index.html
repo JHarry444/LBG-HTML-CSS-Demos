@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        section p {
+            color: purple;
+        }
+
+        section>p {
+            color: peru;
+        }
+
+        /* ANY younger sibling */
+        h5~p {
+            color: yellow;
+        }
+
+        /* The next-oldest sibling */
+        h5+p {
+            color: black;
+        }
+
+        /* All p's are red */
+        p {
+            color: red;
+        }
+
+        /* All p's are now green cos the last one wins */
+        p {
+            color: green;
+        }
+
+        h1.oddHeading {
+            color: aqua;
+        }
+
+        h1#firstHeading {
+            color: pink;
+        }
+
+        h1 {
+            color: orange;
+        }
+
+        section#inheritance {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1>Different kinds of css</h1>
+        </header>
+        <!-- Can set style in line but it's impossible to overwrite and a massive faff -->
+        <h1 id="inline" style="color: blue; width: 100px;">Inline</h1>
+        <h2>Embedded</h2>
+        <h3>External</h3>
+    </section>
+    <section>
+        <h1 class="oddHeading" id="firstHeading">First heading</h1>
+        <h1>Second heading</h1>
+        <h1 class="oddHeading">Third heading</h1>
+        <h1>Fourth heading</h1>
+    </section>
+    <section id="inheritance">
+        <h4>Inheritance</h4>
+        <p class="oddHeading">Lorem ipsum</p>
+        <p>lorem ipsum</p>
+        <p>lorem ipsum</p>
+    </section>
+    <section id="relational">
+        <h4>Relational</h4>
+        <div>
+            <p>Lorem ipsum</p>
+        </div>
+        <p>Lorem ipsum</p>
+        <h5>Adjacent</h5>
+        <p>Lorem Ipsum</p>
+        <p>Lorem Ipsum</p>
+    </section>
+    <section>
+        <h4>Pseudo classes</h4>
+        <br>
+        <ul>
+            <li>Eggs</li>
+            <li>Milk</li>
+            <li>Cheese</li>
+            <li>Bacon</li>
+            <li>Orange Juice</li>
+        </ul>
+        <br>
+        <a href="#">Link</a>
+        <br>
+        <ol>
+            <li> First </li>
+            <li> Second </li>
+            <li> Third </li>
+        </ol>
+    </section>
+    <section>
+        <label for="myInput">My Input</label>
+        <input type="text" name="inputName">
+    </section>
+    <section>
+        <h4>First and last of types</h4>
+        <h5>First</h5>
+        <h5>Second</h5>
+        <h5>Third</h5>
+        <h5>Last</h5>
+    </section>
+</body>
+
+</html>

@@ -6,9 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
     <style>
-        h2+button, #btn1 {
+
+        * {
+            /* box-sizing: border-box; */
+        }
+        h2 {
+            color: pink;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        h2+button,
+        #btn1 {
             padding: 10px;
         }
+
         p {
             border: 1px solid black;
             border-color: black;
@@ -26,6 +38,9 @@
         <h2>Buttons</h2>
         <button id="btn1">Button 1</button>
         <button>Button 2</button>
+    </section>
+    <section>
+        <img src="../03-Images/me.png" alt="look ma, I'm centred" srcset="">
     </section>
     <section>
         <h2>Text</h2>
